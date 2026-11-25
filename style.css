@@ -1,0 +1,29 @@
+/* Legal pages of Unsubscribe-me (GitHub Pages). System fonts, no remote resource. */
+:root {
+  color-scheme: light dark;
+  --bg: #f7f7f5;
+  --surface: #ffffff;
+  --text: #1c1f24;
+  --muted: #5b616b;
+  --line: #e2e4e8;
+  --primary: #2a52be;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #14161a; --surface: #1c1f24; --text: #eceef1; --muted: #a4abb6; --line: #30343b; --primary: #8fb0ff; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 24px; margin-bottom: 24px; }
+header a.home { font-weight: 700; color: var(--text); text-decoration: none; }
+nav { display: flex; gap: 16px; }
+a { color: var(--primary); }
+a:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+article { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 24px; margin-bottom: 24px; }
+h1 { font-size: 28px; line-height: 1.25; margin: 0 0 4px; }
+h2 { font-size: 19px; margin: 28px 0 8px; }
+p, ul { margin: 0 0 12px; }
+li { margin-bottom: 4px; }
+.meta { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
+code { font-size: 14px; }
+footer { color: var(--muted); font-size: 14px; }
